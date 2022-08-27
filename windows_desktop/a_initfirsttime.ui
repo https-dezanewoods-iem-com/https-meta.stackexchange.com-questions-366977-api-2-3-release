@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InitFirstTime</class>
+ <widget class="QWidget" name="InitFirstTime">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>704</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="2,0,2,0,3,0,1">
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>69</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../resources_desktop.qrc">:/img/BigLogo@2x.svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>69</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QWidget" name="ButtonsHolder" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>600</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>600</width>
+         <height>150</height>
+        </size>
+       </property>
+       <widget class="QToolButton" name="newInstanceButton">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>140</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Create a new wallet instance</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{ padding-top: 18px; border-radius: 12px; background: transparent; font-size: 13px;} QToolButton:enabled:!checked::hover {  background-color: rgba(255, 255, 255, 0.1); }</string>
+        </property>
+        <property name="text">
+         <string>New Instance</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources_desktop.qrc">
+          <normaloff>:/img/AddLarge@2x.svg</normaloff>:/img/AddLarge@2x.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>70</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="restoreInstanceButton">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>20</y>
+          <width>140</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Restore wallet from the mnemonic passphrase</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{ padding-top: 18px; border-radius: 12px; background: transparent; font-size: 13px;} QToolButton:enabled:!checked::hover {  background-color: rgba(255, 255, 255, 0.1); }</string>
+        </property>
+        <property name="text">
+         <string>Restore Instance</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources_desktop.qrc">
+          <normaloff>:/img/RestoreBtn_big@2x.svg</normaloff>:/img/RestoreBtn_big@2x.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>70</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="openWalletButton">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>140</width>
+          <height>110</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Open a wallet from not default location like USB stick or another drive</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{ padding-top: 18px; border-radius: 12px; background: transparent; font-size: 13px;} QToolButton:enabled:!checked::hover {  background-color: rgba(255, 255, 255, 0.1); }</string>
+        </property>
+        <property name="text">
+         <string>Open Wallet</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources_desktop.qrc">
+          <normaloff>:/img/OpenFile@2x.svg</normaloff>:/img/OpenFile@2x.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>70</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>104</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="runOnlineNodeButton">
+       <property name="minimumSize">
+        <size>
+         <width>190</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>190</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Run as a Online Node (needed for Cold Wallet).</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{ border-radius: 10px; background: transparent; font-size: 13px;} QToolButton:enabled:!checked::hover {  background-color: rgba(255, 255, 255, 0.1); }</string>
+       </property>
+       <property name="text">
+        <string>     Cold Wallet Node</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_desktop.qrc">
+         <normaloff>:/img/Node@2x.svg</normaloff>:/img/Node@2x.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="helpButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Click to see the help for this page</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{ border-radius: 10px; background: transparent; font-size: 13px;} QToolButton:enabled:!checked::hover {  background-color: rgba(255, 255, 255, 0.1); }</string>
+       </property>
+       <property name="text">
+        <string>    Help</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources_desktop.qrc">
+         <normaloff>:/img/HelpBtn@2x.svg</normaloff>:/img/HelpBtn@2x.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>33</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources_desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>

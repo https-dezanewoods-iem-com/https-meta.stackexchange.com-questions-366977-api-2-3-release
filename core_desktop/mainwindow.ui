@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1000</width>
+         <height>671</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="mainWindowConainer" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="core::MwcToolbar" name="leftTb" native="true"/>
+           </item>
+           <item>
+            <widget class="control::MwcMainWndContainer" name="mainWindowFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout"/>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="helpButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>Click for help</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../resources_desktop.qrc">
+               <normaloff>:/img/HelpBtn@2x.svg</normaloff>:/img/HelpBtn@2x.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>22</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="btnSpacerLabel1">
+             <property name="minimumSize">
+              <size>
+               <width>10</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>10</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="control::MwcPushButtonStatusLine" name="nodeStatusButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>10000</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>Click here to view MWC node status.</string>
+             </property>
+             <property name="text">
+              <string>Floonet</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/img/CircYellow@2x.svg</normalon>
+              </iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>12</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="control::MwcPushButtonStatusLine" name="listenerStatusButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100000</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>Click here to view Listener settings.</string>
+             </property>
+             <property name="text">
+              <string>TOR</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/img/CircYellow@2x.svg</normalon>
+              </iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>12</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="rightestSpacerLabel">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuWallet">
+    <property name="title">
+     <string>Wallet</string>
+    </property>
+    <addaction name="actionSend"/>
+    <addaction name="actionReceive"/>
+    <addaction name="actionFinalize"/>
+    <addaction name="separator"/>
+    <addaction name="actionTransactions"/>
+    <addaction name="actionOutputs"/>
+    <addaction name="separator"/>
+    <addaction name="actionAtomicSwap"/>
+    <addaction name="separator"/>
+    <addaction name="actionAccounts"/>
+    <addaction name="actionEvent_log"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfig"/>
+    <addaction name="separator"/>
+    <addaction name="actionRunning_Mode_Cold_Wallet"/>
+   </widget>
+   <widget class="QMenu" name="menuNetwork">
+    <property name="title">
+     <string>Network</string>
+    </property>
+    <addaction name="actionListeners"/>
+    <addaction name="actionNode_Overview"/>
+    <addaction name="separator"/>
+    <addaction name="actionResync_with_full_node"/>
+   </widget>
+   <widget class="QMenu" name="menuAccount">
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="actionWallet_accounts"/>
+    <addaction name="actionContacts"/>
+    <addaction name="actionShow_passphrase"/>
+    <addaction name="separator"/>
+    <addaction name="actionLogout"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Links</string>
+    </property>
+    <addaction name="actionMWC_website"/>
+    <addaction name="actionBlock_Explorer"/>
+    <addaction name="separator"/>
+    <addaction name="actionWhite_papers"/>
+    <addaction name="actionGood_Money"/>
+    <addaction name="actionRoadmap"/>
+    <addaction name="actionExchanges"/>
+   </widget>
+   <addaction name="menuWallet"/>
+   <addaction name="menuNetwork"/>
+   <addaction name="menuAccount"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionSend">
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </action>
+  <action name="actionReceive">
+   <property name="text">
+    <string>Receive</string>
+   </property>
+  </action>
+  <action name="actionFinalize">
+   <property name="text">
+    <string>Finalize</string>
+   </property>
+  </action>
+  <action name="actionTransactions">
+   <property name="text">
+    <string>Transactions</string>
+   </property>
+  </action>
+  <action name="actionListeners">
+   <property name="text">
+    <string>Listeners</string>
+   </property>
+  </action>
+  <action name="actionNode_Overview">
+   <property name="text">
+    <string>MWC Node Status</string>
+   </property>
+  </action>
+  <action name="actionResync_with_full_node">
+   <property name="text">
+    <string>Resync with full node</string>
+   </property>
+  </action>
+  <action name="actionOutputs">
+   <property name="text">
+    <string>Outputs</string>
+   </property>
+  </action>
+  <action name="actionAirdrop">
+   <property name="text">
+    <string>Airdrop</string>
+   </property>
+  </action>
+  <action name="actionHODL">
+   <property name="text">
+    <string>HODL</string>
+   </property>
+  </action>
+  <action name="actionWallet_accounts">
+   <property name="text">
+    <string>Wallet accounts</string>
+   </property>
+  </action>
+  <action name="actionAccounts">
+   <property name="text">
+    <string>Accounts</string>
+   </property>
+  </action>
+  <action name="actionContacts">
+   <property name="text">
+    <string>Contacts</string>
+   </property>
+  </action>
+  <action name="actionShow_passphrase">
+   <property name="text">
+    <string>Show passphrase</string>
+   </property>
+  </action>
+  <action name="actionEvent_log">
+   <property name="text">
+    <string>Notifications</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionConfig">
+   <property name="text">
+    <string>Config</string>
+   </property>
+  </action>
+  <action name="actionRunning_Mode_Cold_Wallet">
+   <property name="text">
+    <string>Running Mode (Cold Wallet)</string>
+   </property>
+  </action>
+  <action name="actionBlock_Explorer">
+   <property name="text">
+    <string>Block Explorer</string>
+   </property>
+  </action>
+  <action name="actionWhite_papers">
+   <property name="text">
+    <string>MWC Whitepaper</string>
+   </property>
+  </action>
+  <action name="actionGood_Money">
+   <property name="text">
+    <string>Good Money</string>
+   </property>
+  </action>
+  <action name="actionRoadmap">
+   <property name="text">
+    <string>Roadmap</string>
+   </property>
+  </action>
+  <action name="actionMWC_website">
+   <property name="text">
+    <string>MWC website</string>
+   </property>
+  </action>
+  <action name="actionExchanges">
+   <property name="text">
+    <string>Exchanges</string>
+   </property>
+  </action>
+  <action name="actionAtomicSwap">
+   <property name="text">
+    <string>Atomic Swap</string>
+   </property>
+   <property name="toolTip">
+    <string>Peer to peer atomic Swap</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>core::MwcToolbar</class>
+   <extends>QWidget</extends>
+   <header>core_desktop/mwctoolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>control::MwcPushButtonStatusLine</class>
+   <extends>QPushButton</extends>
+   <header>control_desktop/MwcPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>control::MwcMainWndContainer</class>
+   <extends>QFrame</extends>
+   <header>control_desktop/MwcMainWndContainer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources_desktop.qrc"/>
+ </resources>
+ <connections/>
+</ui>
