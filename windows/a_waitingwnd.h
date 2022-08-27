@@ -1,0 +1,52 @@
+// Copyright 2019 The MWC Developers
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#ifndef WAITINGWND_H
+#define WAITINGWND_H
+
+#include <QWidget>
+
+namespace Ui {
+class WaitingWnd;
+}
+
+namespace wnd {
+
+class WaitingWnd;
+
+class WaitingWndState {
+public:
+    void virtual deleteWaitingWnd(wnd::WaitingWnd * w) = 0;
+};
+
+// Just a waiting dialog, that can be updated with some info
+class WaitingWnd : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit WaitingWnd(QWidget *parent, WaitingWndState * state, QString title, QString progressMessage);
+    ~WaitingWnd();
+
+    void updateTitle(QString title);
+    void updateProgressMessage( QString message );
+
+private:
+    Ui::WaitingWnd *ui;
+    WaitingWndState * state;
+};
+
+}
+
+#endif // WAITINGWND_H
